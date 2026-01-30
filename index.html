@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>お問い合わせフォーム</title>
+</head>
+<body>
+    <h1 class="title">お問い合わせフォーム</h1>
+
+    <form class="content" action="check.php" method="post">
+
+        <div>ユーザー名</div>
+        <input type="text" class="form-input" name="userName">
+
+        <div>メールアドレス</div>
+        <input type="text" class="form-input" name="mail">
+
+        <div>年齢</div>
+        <select class="form-input" name="age">
+            <option>選択してください</option>
+            <option value="10代">10代</option>
+            <option value="20代">20代</option>
+            <option value="30代以上">30代以上</option>
+        </select>
+
+        <div>コメント</div>
+        <textarea class="form-input form-input-large" name="comment"></textarea>
+
+        <input type="submit" class="button button-next" value="確認画面に進む">
+
+    </form>
+</body>
+</html>
